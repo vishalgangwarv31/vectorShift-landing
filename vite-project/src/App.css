@@ -235,10 +235,27 @@ body{
   margin-top: 20px;
   transition: background-color 0.4s ease, color 0.4s ease; 
 }
-.box:hover {
+.hover-box.active {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.hover-box2.active {
   background-color: white;
   color: black;
 }
+.hover-box3.active {
+  background-color: white;
+  color: black;
+}
+.hover-box4.active {
+  background-color: white;
+  color: black;
+}
+.hover-box5.active {
+  background-color: white;
+  color: black;
+}
+
 
 .box p{
   border-bottom: 1px solid rgba(189, 187, 187, 0.378);
@@ -295,17 +312,21 @@ body{
 }
 
 .blue{
-  color: #5cb2fd;
+  color: #cf06fc;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .sky{
-  color: skyblue;
+  color: rgb(0, 158, 220);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .brown{
-  color: rgb(255, 183, 124);
+  color: rgb(251, 122, 16);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
-.equal{
-  color: rgb(255, 221, 0)
-}
+/* .equal{
+  color: rgb(255, 255, 255);
+  transition: background-color 0.4s ease, color 0.4s ease;
+} */
 
 .file-node{
   height: fit-content;
@@ -314,6 +335,7 @@ body{
   margin-left: 5px;
   padding: 10px;
   padding-top:5px ;
+  transition: background-color 0.4s ease, color 0.4s ease; 
 }
 
 .model_text_node{
@@ -323,12 +345,13 @@ body{
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
+  transition: background-color 0.4s ease, color 0.4s ease; 
 }
 
 .fileloader_node{
   height: fit-content;
   width: fit-content;
-  
+  transition: background-color 0.4s ease, color 0.4s ease; 
   margin-left: 5px;
   padding: 10px;
   padding-top:5px ;
@@ -338,6 +361,7 @@ body{
   height: fit-content;
   width: fit-content;
   /* background-color: white; */
+  transition: background-color 0.4s ease, color 0.4s ease; 
   margin-left: 5px;
   padding: 10px;
   padding-top:5px ;
@@ -347,6 +371,7 @@ body{
   height: fit-content;
   width: fit-content;
   /* background-color: white; */
+  transition: background-color 0.4s ease, color 0.4s ease; 
   margin-left: 5px;
   padding: 10px;
   padding-top:5px ;

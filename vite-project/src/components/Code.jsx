@@ -1,6 +1,125 @@
 import { FileChartColumnIncreasing , Slack} from 'lucide-react';
+import { useEffect } from 'react';
 
 const Code = () =>{
+    useEffect(() => {
+        const hoverElements = document.querySelectorAll('.hover-box');
+    
+        const handleMouseEnter = () => {
+          hoverElements.forEach(el => el.classList.add('active'));
+        };
+    
+        const handleMouseLeave = () => {
+          hoverElements.forEach(el => el.classList.remove('active'));
+        };
+    
+        hoverElements.forEach(el => {
+          el.addEventListener('mouseenter', handleMouseEnter);
+          el.addEventListener('mouseleave', handleMouseLeave);
+        });
+        
+        return () => {
+          hoverElements.forEach(el => {
+            el.removeEventListener('mouseenter', handleMouseEnter);
+            el.removeEventListener('mouseleave', handleMouseLeave);
+          });
+        };
+      }, []);
+
+      useEffect(() => {
+        const hoverElements = document.querySelectorAll('.hover-box2');
+    
+        const handleMouseEnter = () => {
+          hoverElements.forEach(el => el.classList.add('active'));
+        };
+    
+        const handleMouseLeave = () => {
+          hoverElements.forEach(el => el.classList.remove('active'));
+        };
+    
+        hoverElements.forEach(el => {
+          el.addEventListener('mouseenter', handleMouseEnter);
+          el.addEventListener('mouseleave', handleMouseLeave);
+        });
+        
+        return () => {
+          hoverElements.forEach(el => {
+            el.removeEventListener('mouseenter', handleMouseEnter);
+            el.removeEventListener('mouseleave', handleMouseLeave);
+          });
+        };
+      }, []);
+      useEffect(() => {
+        const hoverElements = document.querySelectorAll('.hover-box3');
+    
+        const handleMouseEnter = () => {
+          hoverElements.forEach(el => el.classList.add('active'));
+        };
+    
+        const handleMouseLeave = () => {
+          hoverElements.forEach(el => el.classList.remove('active'));
+        };
+    
+        hoverElements.forEach(el => {
+          el.addEventListener('mouseenter', handleMouseEnter);
+          el.addEventListener('mouseleave', handleMouseLeave);
+        });
+        
+        return () => {
+          hoverElements.forEach(el => {
+            el.removeEventListener('mouseenter', handleMouseEnter);
+            el.removeEventListener('mouseleave', handleMouseLeave);
+          });
+        };
+      }, []);
+      useEffect(() => {
+        const hoverElements = document.querySelectorAll('.hover-box4');
+    
+        const handleMouseEnter = () => {
+          hoverElements.forEach(el => el.classList.add('active'));
+        };
+    
+        const handleMouseLeave = () => {
+          hoverElements.forEach(el => el.classList.remove('active'));
+        };
+    
+        hoverElements.forEach(el => {
+          el.addEventListener('mouseenter', handleMouseEnter);
+          el.addEventListener('mouseleave', handleMouseLeave);
+        });
+        
+        return () => {
+          hoverElements.forEach(el => {
+            el.removeEventListener('mouseenter', handleMouseEnter);
+            el.removeEventListener('mouseleave', handleMouseLeave);
+          });
+        };
+      }, []);
+      useEffect(() => {
+        const hoverElements = document.querySelectorAll('.hover-box5');
+    
+        const handleMouseEnter = () => {
+          hoverElements.forEach(el => el.classList.add('active'));
+        };
+    
+        const handleMouseLeave = () => {
+          hoverElements.forEach(el => el.classList.remove('active'));
+        };
+    
+        hoverElements.forEach(el => {
+          el.addEventListener('mouseenter', handleMouseEnter);
+          el.addEventListener('mouseleave', handleMouseLeave);
+        });
+        
+        return () => {
+          hoverElements.forEach(el => {
+            el.removeEventListener('mouseenter', handleMouseEnter);
+            el.removeEventListener('mouseleave', handleMouseLeave);
+          });
+        };
+      }, []);
+    
+
     return(
         <div className="code-container">
             <span className='heading-code-style'>Drag and Drop to build application</span>
@@ -12,11 +131,29 @@ const Code = () =>{
                         customizable deployment interfaces. No coding required. 
                     </p>
                     <div className='box-container'>
-                        <Box heading='File Input' data='JSON, CSV, PDF' icon={FileChartColumnIncreasing}></Box>
-                        <Box heading='Instruction Text' data='Describe this file to me'></Box>
-                        <Box heading='File Loader' data='Read the input file' icon={FileChartColumnIncreasing} ></Box>
-                        <Box heading='OpenAI LLM' data='Model: gpt-4.0-turbo' icon={Slack} ></Box>
-                        <Box heading='Result' data='Generated Output'></Box>
+                        <div className='box hover-box'>
+                            <p>File Input</p>
+                             <FileChartColumnIncreasing/>
+                            JSON, CSV, PDF
+                        </div>
+                        <div className='box hover-box2'>
+                            <p>Instruction </p>
+                             Describe this file to me
+                        </div>
+                        <div className='box hover-box3'>
+                            <p>File Loader </p>
+                            <FileChartColumnIncreasing/>
+                            Read the input file
+                        </div>
+                        <div className='box hover-box4'>
+                            <p>OpenAI LLM </p>
+                            <Slack/>
+                            Model: gpt-4.0-turbo
+                        </div>
+                        <div className='box hover-box5'>
+                            <p>Result </p>
+                            Generated Output
+                        </div>
                     </div>
                     
                 </div>
@@ -40,26 +177,26 @@ const Code = () =>{
                         </div>
                         <br />
                         
-                        <div className='file-node'>file_node<span className='equal'> = </span><span className='blue'>InputNode</span> 
+                        <div id='box1' className='file-node hover-box'>file_node<span className='equal'> = </span><span className='blue'>InputNode</span> 
                             (<span className='brown'>name</span><span className='equal'>=</span><span className='sky'>'file_input'</span>,<span className='brown'>input_type</span><span className='equal'>=</span><span className='sky'>'file'</span>)
                         </div>
 
-                        <div className='model_text_node'>model_text_node<span className='equal'> = </span><span className='blue'>TextNode</span> 
+                        <div className='model_text_node hover-box2'>model_text_node<span className='equal'> = </span><span className='blue'>TextNode</span> 
                             (<span className='brown'>text</span><span className='equal'>=</span><span className='sky'>'Describe this file to me.'</span>)
                         </div>
 
-                        <div className='fileloader_node'>fileloader_node<span className='equal'> = </span><span className='blue'>FileLoaderNode</span> 
+                        <div className='fileloader_node hover-box3'>fileloader_node<span className='equal'> = </span><span className='blue'>FileLoaderNode</span> 
                             (<span className='brown'>file_input</span><span className='equal'>=</span><span className='sky'>file_node.output()</span>)
                         </div>
 
-                        <div className='llm_node'>llm_node<span className='equal'> = </span><span className='blue'>OpenAI_LLMNode</span> 
+                        <div className='llm_node hover-box4'>llm_node<span className='equal'> = </span><span className='blue'>OpenAI_LLMNode</span> 
                             (<br/>&nbsp;&nbsp;&nbsp;<span className='brown'>model</span><span className='equal'>=</span><span className='sky'>'gpt-4.0-turbo'</span>,
                              <br/>&nbsp;&nbsp;&nbsp;<span className='brown'>system_input</span><span className='equal'>=</span>model_text_node.<span className='sky'>output()</span>,
                              <br/>&nbsp;&nbsp;&nbsp;<span className='brown'>prompt_input</span><span className='equal'>=</span>fileloader_node.<span className='sky'>output()</span><br/>
                             )
                         </div>
 
-                        <div className='output_node'>output_node<span className='equal'> = </span><span className='blue'>OutputNode</span> 
+                        <div className='output_node hover-box5'>output_node<span className='equal'> = </span><span className='blue'>OutputNode</span> 
                             (<br/>&nbsp;&nbsp;&nbsp;<span className='brown'>name</span><span className='equal'>=</span><span className='sky'>'my_output'</span>,
                              <br/>&nbsp;&nbsp;&nbsp;<span className='brown'>output_type</span><span className='equal'>=</span><span className='sky'>'text'</span>,
                              <br/>&nbsp;&nbsp;&nbsp;<span className='brown'>input</span><span className='equal'>=</span>llm_node.<span className='sky'>output()</span><br/>
@@ -74,7 +211,7 @@ const Code = () =>{
 
 const Box = (payload)=>{
     return(
-        <div className='box'>
+        <div id={payload.id} className='box hover-box' >
             <p>{payload.heading}</p>
             { payload.icon  && <payload.icon/>}
             {payload.data}
