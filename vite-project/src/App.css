@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body{
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
   color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+
 }
 
 .header-container{
@@ -94,14 +100,14 @@ body{
   flex-direction: column;
   margin-left: 15vw;
   margin-right: 15vw;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
 }
 
 .first-heading {
   font-size: 3rem;
   font-weight: bold; 
-  background: linear-gradient(45deg, #1e90ff, #87cefa); 
+  background: linear-gradient(to right, #2797f9, #DA70D6);
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
   background-clip: text;
@@ -118,12 +124,13 @@ body{
   font-size: 1.25rem;
   text-align: center;
   line-height: 1.4;
+  word-spacing: 1px;
 }
 
 .get-start-button{
   height: 70px;
   width: 170px;
-  background: linear-gradient(45deg, #1e90ff, #87cefa); 
+  background: linear-gradient(to right, #2797f9, #DA70D6);
   border-radius: 4rem;
   font-size: larger;
   border: none;
@@ -137,6 +144,7 @@ body{
   margin-left: 15vw;
   margin-right: 15vw;
   margin-top: 5vh;
+  margin-bottom: 10vh;
   height: 70vh; 
   width: 69vw; 
   position: relative;
@@ -150,4 +158,196 @@ body{
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
+}
+
+
+/*``````````````````````````````````````Code`````````````````````````````````````````````````````````` */
+
+.code-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading-code-style{
+  font-size: 3rem; 
+  font-weight: bold; 
+  background: linear-gradient(to right, #2797f9, #DA70D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.code-detail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.code-info{
+  height: 87vh;
+  width: 40vw;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid rgba(189, 187, 187, 0.378);
+  border-radius: 7px;
+}
+.code-code{
+  height: 87vh;
+  width: 40vw;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid rgba(189, 187, 187, 0.378);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-info header{
+  font-size: 1.8rem;
+  font-weight: bold ;
+}
+
+.code-info p{
+  word-spacing: 2px;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box{
+  height: fit-content;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(189, 187, 187, 0.378);
+  margin: 5px;
+  margin-top: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease; 
+}
+.box:hover {
+  background-color: white;
+  color: black;
+}
+
+.box p{
+  border-bottom: 1px solid rgba(189, 187, 187, 0.378);
+  width: 20vw;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.code-code header{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.code-code p{
+  word-spacing: 2px;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.code-boxx{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  border: 1px solid rgba(189, 187, 187, 0.378);
+  height: fit-content;
+}
+
+.circle{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 5px;
+}
+
+.file-name{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(189, 187, 187, 0.378);
+  width: 39vw;
+  padding: 0.5rem;
+}
+
+.title-code{
+  font-size: 13px;
+}
+
+.import{
+  padding: 10px;
+  padding-bottom:0px ;
+  margin-left: 5px;
+}
+
+.blue{
+  color: #5cb2fd;
+}
+.sky{
+  color: skyblue;
+}
+.brown{
+  color: rgb(255, 183, 124);
+}
+.equal{
+  color: rgb(255, 221, 0)
+}
+
+.file-node{
+  height: fit-content;
+  width: fit-content;
+  /* background-color: white; */
+  margin-left: 5px;
+  padding: 10px;
+  padding-top:5px ;
+}
+
+.model_text_node{
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fileloader_node{
+  height: fit-content;
+  width: fit-content;
+  
+  margin-left: 5px;
+  padding: 10px;
+  padding-top:5px ;
+}
+
+.llm_node{
+  height: fit-content;
+  width: fit-content;
+  /* background-color: white; */
+  margin-left: 5px;
+  padding: 10px;
+  padding-top:5px ;
+}
+
+.output_node{
+  height: fit-content;
+  width: fit-content;
+  /* background-color: white; */
+  margin-left: 5px;
+  padding: 10px;
+  padding-top:5px ;
 }
