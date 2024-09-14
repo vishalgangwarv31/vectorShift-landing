@@ -379,3 +379,51 @@ body{
   margin-bottom: 10px;
 }
 
+/*-------------------------slider-----------------------------*/
+
+
+.slider-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 12.5vw;
+  flex-direction: column;
+  width: 75%; 
+  overflow: hidden;  
+  position: relative;
+}
+
+.heading{
+  font-size: 2rem;
+  margin: 0;
+  background: linear-gradient(to right, #2797f9, #DA70D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slider-track {
+  height: 14vh;
+  display: flex; 
+  width: 200%;  
+  animation: slide 10s linear infinite;  
+}
+
+.slider-image {
+  width: 50%;  
+  flex-shrink: 0; 
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-track:hover {
+  animation-play-state: paused;  /* Pause the animation on hover */
+}
