@@ -402,6 +402,16 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.heading p{
+  margin: 0;
+  padding: 0;
 }
 
 .slider-track {
@@ -426,4 +436,94 @@ body{
 
 .slider-track:hover {
   animation-play-state: paused;  /* Pause the animation on hover */
+}
+
+.use-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+}
+
+.use-left{
+  width: 30vw;
+  display: flex;
+  justify-content: start;
+  align-items: self-start;
+  flex-direction: column;
+  /* text-align: center; */
+  margin-right: 15vw;
+}
+
+.use-heading{
+  display: flex;
+  align-items: center;
+}
+
+.recycle-img{
+  height: 40px;
+  width: 40px;
+}
+
+.notion{
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.airtable{
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.app-number{
+  background-color: #7079da;
+  text-align:center;
+  border-radius: 6px;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  width: 35px;
+}
+
+.use-icon{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.tile-container{
+  height: auto;
+  width: auto;
+  background-color: #7228d2b9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.tile-task{
+  display: flex;
+  align-items: center;
+}
+
+.heading-app{
+  font-size: 2rem;
+  margin: 0;
+  background: linear-gradient(to right, #2797f9, #DA70D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.heading-app p{
+  margin: 0;
+  padding: 0;
 }
