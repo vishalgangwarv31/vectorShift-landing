@@ -1,1 +1,3 @@
-https://github.com/vishalgangwarv31/vectorShift-landing/blob/main/20240925-2015-02.8162391.mp4
+preview:
+https://github.com/user-attachments/assets/23c33e4d-d4d1-4f0f-b92e-0a056afb9ef6
+
