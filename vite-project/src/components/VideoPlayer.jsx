@@ -1,6 +1,3 @@
-import React, { useRef, useState } from 'react';
-import videoPoster from '../assets/images/background.jpg'
-
 const VideoPlayer = () => {
   return (
     <div className="video-container">

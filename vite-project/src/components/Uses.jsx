@@ -25,6 +25,7 @@ const Uses=()=>{
                 </div>
             </div>
             <div>
+                <div>
                 <Tile heading="When was this contract started?" 
                       task="20230329-Product-Contract-Acme.pdf"
                       description = "The contract started on January 1, 2023.">
@@ -37,6 +38,8 @@ const Uses=()=>{
                       task="20230329-Product-Contract-Acme.pdf"
                       description = "The contract started on January 1, 2023.">
                 </Tile>
+                </div>
+                
             </div>
             
         </div>

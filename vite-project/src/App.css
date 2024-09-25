@@ -386,8 +386,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   margin-left: 12.5vw;
   flex-direction: column;
   width: 75%; 
@@ -526,4 +526,28 @@ body{
 .heading-app p{
   margin: 0;
   padding: 0;
+}
+
+.footer-container{
+  display:  flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  font-size: large;
+  border-top: 1px solid rgba(189, 187, 187, 0.378);
+}
+.footer-container p{
+  color: white;
+  transition: all 0.2s;
+}
+
+.footer-container p:hover{
+  color: #ffffff93;
+  cursor: pointer;
+}
+
+.block{
+  animation : appear linear;
+  animation-timeline: view();
+  animation-range: entry 70%;
 }
